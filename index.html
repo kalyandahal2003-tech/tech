@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Tokyo Student Housing</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	 <script>
+        alert("Welcome to Tokyo Student Housing!\n\nWe hope you find a comfortable and affordable home while studying in Tokyo.");
+    </script>
+	
+</head>
+<body>
+	
+	<div id="header">
+		<div>
+			<a href="index.html" id="logo"><img src="images/logo.png" alt="logo" width="150"></a>
+			<ul>
+				<li class="selected">
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="subdivisions.html">Student Rooms</a>
+				</li>
+				<li>
+					<a href="blog.html">Student Life</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="body" class="home">
+		<div class="blog">
+			<img src="images/house.png" alt="">
+			<div>
+				<img src="images/international housing.jpg" alt="" width="339" height="100">
+				<h3>Comfortable Student Housing in Tokyo</h3>
+				<p>
+					
+					Tokyo Student Housing provides affordable and practical apartments for international students who want a comfortable place to live while studying in Tokyo. Our rooms are designed for students with busy schedules, early classes, part-time jobs, and long commutes. We understand that student life in Japan is not only about finding a room, but also about finding a space where you can rest, study, cook, and manage daily life with less stress. Our goal is to support students by offering housing that feels safe, convenient, and close to the rhythm of university life.
+				</p>
+			</div>
+		</div>
+		<h2>🏠 Student Housing Budget Checker</h2>
+
+<p>Enter your monthly housing budget (¥):</p>
+
+<input type="number" id="budget" placeholder="e.g. 60000">
+
+<button onclick="checkBudget()">Check Budget</button>
+
+<p id="result"></p>
+
+		<div class="article">
+			<div>
+				<h3>Student Life and Part time Job</h3>
+				<p>
+					A normal day for many international students in Tokyo starts early. They wake up, get ready for class, travel by train, attend lectures, and spend hours working on assignments or group projects. After that, many students go directly to their part-time jobs and return home late at night feeling tired and needing a quiet place to rest.
+				</p>
+				<p>
+					That is why student housing should be more than just a room. It should support daily life by giving students a clean space to sleep, study, and prepare for the next day. A good apartment helps students manage their routine better, save travel time, and keep balance between university, work, and personal life.
+				</p>
+				<p>
+					Tokyo Student Housing focuses on simple, student-friendly living. Our apartments are suitable for international students who want comfort, privacy, and a location that makes everyday life easier. Whether you are coming home after a long shift, preparing for an exam, or just trying to build a stable life in a new country, we want your room to feel like a dependable home in Tokyo.
+				</p>
+			</div>
+			<img src="images/nature-place-map.png" alt="">
+		</div>
+		<div class="news">
+			<img src="images/eco-park.png" alt="">
+			
+			<div>
+				
+				<h3>Built for International Students</h3>
+				<p>
+					International students face many challenges while living in Japan, including language barriers, budgeting, time management, and adapting to a new environment. Having the right apartment can make a big difference in daily life. A room near transportation, shops, and university areas can reduce stress and give students more time for study, work, and rest.
+				</p>
+				<p>
+					Our housing service is created with those needs in mind. We aim to provide student apartments that are practical, welcoming, and suitable for the daily routine of university life in Tokyo. From weekday classes to weekend shifts and late-night study sessions, Tokyo Student Housing is here to support a more stable and comfortable student experience.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div>
+			<p>
+				&#169;2026 Kalyan Dahal | Student ID: 25224518
+			</p>
+			<div class="connect">
+    <a href="https://www.tiu.ac.jp/">TIU Home</a> |
+    <a href="https://www.tiu.ac.jp/etrack/">E-Track</a> |
+    <a href="https://www.tiu.ac.jp/etrack/life/housing/">Housing</a> |
+    <a href="https://www.tiu.ac.jp/etrack/life/costofliving/">Cost of Living</a>
+</div>
+<div style="text-align:center; margin:20px;">
+    <strong>Original Website Template:</strong>
+    <a href="https://freewebsitetemplates.com/preview/ecoliving/index.html" target="_blank">
+        Ecoliving-FreeWebsiteTemplate
+    </a>
+</div>
+		</div>
+	</div>
+	<script>
+function checkBudget() {
+    let budget = document.getElementById("budget").value;
+
+    if (budget >= 80000) {
+        document.getElementById("result").innerHTML =
+        "🌟 You can afford a spacious apartment in Tokyo.";
+    } else if (budget >= 50000) {
+        document.getElementById("result").innerHTML =
+        "🏠 You can find a comfortable student room.";
+    } else {
+        document.getElementById("result").innerHTML =
+        "💰 A shared room or budget housing may be the best option.";
+    }
+}
+</script>
+</body>
+</html>
